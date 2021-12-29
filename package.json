@@ -1,0 +1,30 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superPiu/Promise.git"
+  },
+  "keywords": [
+    "promise",
+    "then",
+    "catch",
+    "all",
+    "race"
+  ],
+  "author": "piu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superPiu/Promise/issues"
+  },
+  "homepage": "https://github.com/superPiu/Promise#readme",
+  "dependencies": {
+    "webpack": "^5.65.0"
+  }
+}
