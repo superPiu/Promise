@@ -1,6 +1,5 @@
 const Promise = require('./promise')
 
-
 const p1 = new Promise((resolve,reject)=>{
     setTimeout(()=>{
         resolve('p1')
@@ -8,7 +7,11 @@ const p1 = new Promise((resolve,reject)=>{
 })
 p1.then((res)=>{
     console.log(res)
-    return res
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve('p2Resolve')
+        },1000)
+    })
 }).then((res)=>{
-    console.log('2-'+res)
+    console.log(res)
 })
