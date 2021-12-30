@@ -15,3 +15,15 @@ p1.then((res)=>{
 }).then((res)=>{
     console.log(res)
 })
+const p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('p2')
+    },3000)
+})
+
+Promise.all([p1,p2]).then((val)=>{
+    console.log(val)
+})
+Promise.race([p1,p2]).then((val)=>{
+    console.log(val)
+})
